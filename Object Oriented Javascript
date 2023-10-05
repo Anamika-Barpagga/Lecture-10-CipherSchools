@@ -137,7 +137,7 @@ class Student extends Person{
     this.rollNumber = rollNumber;
 
   getDetails_Acess = function(){
-    return "";
+    return "The first name is: $(this.firstName) and last name is: $(this.lastName) and the roll number is: $(this.rollNumber)";
     };
   }
 }
@@ -145,4 +145,7 @@ let person1 = new  Person("Shantanu", "Shubham");
 
 console.log(perosn1.firstName);
 console.log(person1.getDetails_NoAccess());
-console.log(person1.getDetails_Access());
+
+let studemt1 = new Student("Anurag","Mishra", 20);
+console.log(student1.getDetails());
+
